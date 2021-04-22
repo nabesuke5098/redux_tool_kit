@@ -74,7 +74,7 @@ const useStyles = makeStyles((theme) => ({
     position: "absolute",
     width: 400,
     borderRadius: 10,
-    backgroundColoer: "white",
+    backgroundColor: "white",
     boxShadow: theme.shadows[5],
     padding: theme.spacing(10),
   },
