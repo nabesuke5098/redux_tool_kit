@@ -7,7 +7,7 @@ import { Avatar, Button, IconButton } from "@material-ui/core";
 import firebase from "firebase/app";
 import AddAPhotoIcon from "@material-ui/icons/AddAPhoto";
 
-function TweerInput() {
+const TweerInput: React.FC = () => {
   const user = useSelector(selectUser);
   const [tweetMsg, setTweetMsg] = useState("");
   const [tweetImage, setTweetImage] = useState<File | null>(null);
@@ -111,6 +111,6 @@ function TweerInput() {
       </form>
     </>
   );
-}
+};
 
 export default TweerInput;
