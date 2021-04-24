@@ -82,7 +82,9 @@ const TweerInput: React.FC = () => {
             type="text"
             autoFocus
             value={tweetMsg}
-            onChange={(e) => setTweetMsg(e.target.value)}
+            onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+              setTweetMsg(e.target.value)
+            }
           />
           <IconButton>
             <label>
